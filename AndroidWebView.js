@@ -235,6 +235,15 @@ class AndroidWebView extends Component {
      */
     thirdPartyCookiesEnabled: PropTypes.bool,
 
+    /*
+     * Used on Android only, controls whether the given list of URL prefixes should
+     * make {@link com.facebook.react.views.webview.ReactWebViewClient} to launch a
+     * default activity intent for those URL instead of loading it within the webview.
+     * Use this to list URLs that WebView cannot handle, e.g. a PDF url.
+     * @platform android
+     */
+    urlPrefixesForDefaultIntent: PropTypes.arrayOf(PropTypes.string),
+
     /**
      * Used on Android only, controls whether form autocomplete data should be saved
      * @platform android
@@ -426,6 +435,7 @@ class AndroidWebView extends Component {
         mixedContentMode={this.props.mixedContentMode}
         thirdPartyCookiesEnabled={this.props.thirdPartyCookiesEnabled}
         saveFormDataDisabled={this.props.saveFormDataDisabled}
+        urlPrefixesForDefaultIntent={this.props.urlPrefixesForDefaultIntent}
         uploadEnabledAndroid={true}
       />
     );
