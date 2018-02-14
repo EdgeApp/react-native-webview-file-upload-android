@@ -8,10 +8,7 @@
  *
  * @providesModule AndroidWebView
  */
-import React, {
-  Component,
-  PropTypes,
-} from 'react';
+import React, { Component } from 'react';
 import ReactNative, {
   EdgeInsetsPropType,
   ActivityIndicator,
@@ -20,6 +17,7 @@ import ReactNative, {
   View,
   requireNativeComponent,
 } from 'react-native';
+import PropTypes from 'prop-types';
 import warning from 'warning';
 import keyMirror from 'keymirror';
 import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource';
