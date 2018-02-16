@@ -16,8 +16,8 @@ import ReactNative, {
   UIManager,
   View,
   requireNativeComponent,
+  ViewPropTypes,
 } from 'react-native';
-import ViewPropTypes from 'react-native';
 import PropTypes from 'prop-types';
 import warning from 'warning';
 import keyMirror from 'keymirror';
